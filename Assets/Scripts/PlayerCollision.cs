@@ -6,9 +6,9 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision col)
     {
-        if(other.collider.tag == "Obstacle")
+        if(col.collider.tag == "Obstacle")
         {
             movement.enabled = false;
             FindObjectOfType<GameManager>().GameOver();
