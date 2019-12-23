@@ -2170,6 +2170,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5640918302268308965, guid: 6aed1fea608bc714f9b1ebbaa77f3d18,
+        type: 3}
+      propertyPath: forwardForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640918302268308965, guid: 6aed1fea608bc714f9b1ebbaa77f3d18,
+        type: 3}
+      propertyPath: acceleration
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640918302268308965, guid: 6aed1fea608bc714f9b1ebbaa77f3d18,
+        type: 3}
+      propertyPath: sidewaysForce
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640918302268308965, guid: 6aed1fea608bc714f9b1ebbaa77f3d18,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 4000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aed1fea608bc714f9b1ebbaa77f3d18, type: 3}
 --- !u!1001 &7557741272472707879
@@ -2258,6 +2278,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5494658352977040764, guid: e1602279cdf40d04fb70de5cb0d7202b,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 8896430544315560545}
+    - target: {fileID: 7844914384491445605, guid: e1602279cdf40d04fb70de5cb0d7202b,
+        type: 3}
+      propertyPath: completeLevelUI
+      value: 
+      objectReference: {fileID: 172963114}
+    - target: {fileID: 7844914384491445605, guid: e1602279cdf40d04fb70de5cb0d7202b,
+        type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1814589981}
     - target: {fileID: 7844914384491445606, guid: e1602279cdf40d04fb70de5cb0d7202b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2313,21 +2348,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7844914384491445605, guid: e1602279cdf40d04fb70de5cb0d7202b,
-        type: 3}
-      propertyPath: completeLevelUI
-      value: 
-      objectReference: {fileID: 172963114}
-    - target: {fileID: 7844914384491445605, guid: e1602279cdf40d04fb70de5cb0d7202b,
-        type: 3}
-      propertyPath: score
-      value: 
-      objectReference: {fileID: 1814589981}
-    - target: {fileID: 5494658352977040764, guid: e1602279cdf40d04fb70de5cb0d7202b,
-        type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 8896430544315560545}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1602279cdf40d04fb70de5cb0d7202b, type: 3}
 --- !u!114 &7844914386264072953 stripped
@@ -2353,6 +2373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896430544142862154, guid: c039461ef19326244a67aa2823e4da11,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8896430544250326154, guid: c039461ef19326244a67aa2823e4da11,
         type: 3}
@@ -2459,25 +2484,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8896430543801876218, guid: c039461ef19326244a67aa2823e4da11,
-        type: 3}
-      propertyPath: m_Name
-      value: Score
-      objectReference: {fileID: 0}
     - target: {fileID: 8896430543801876220, guid: c039461ef19326244a67aa2823e4da11,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 659804609}
-    - target: {fileID: 8896430544142862154, guid: c039461ef19326244a67aa2823e4da11,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 586779780, guid: c039461ef19326244a67aa2823e4da11, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1389420368, guid: c039461ef19326244a67aa2823e4da11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2525,6 +2536,15 @@ PrefabInstance:
     - target: {fileID: 1521936608, guid: c039461ef19326244a67aa2823e4da11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896430543801876218, guid: c039461ef19326244a67aa2823e4da11,
+        type: 3}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 586779780, guid: c039461ef19326244a67aa2823e4da11, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3940464538915919245, guid: c039461ef19326244a67aa2823e4da11, type: 3}

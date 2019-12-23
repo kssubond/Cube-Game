@@ -123,7 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fcb5d1f75154884c8fe51358169cf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  acceleration: 1
   forwardForce: 7500
+  maxSpeed: 0
   sidewaysForce: 100
   positionOffScreen: -1
 --- !u!114 &5640918302268308964
